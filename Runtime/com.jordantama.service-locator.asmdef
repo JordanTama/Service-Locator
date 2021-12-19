@@ -1,0 +1,14 @@
+{
+    "name": "com.jordantama.service-locator",
+    "rootNamespace": "JordanTama.ServiceLocator",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
