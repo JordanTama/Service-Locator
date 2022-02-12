@@ -12,6 +12,8 @@ namespace JordanTama.ServiceLocator
 
         private static Locator instance;
 
+        public static bool Initialized => instance != null;
+
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Initialize()
         {
@@ -55,6 +57,9 @@ namespace JordanTama.ServiceLocator
                 return;
             }
 
+            if (instance.services.ContainsKey(key))
+                instance.services[key].OnServiceUnregistered();
+            
             instance.services.Remove(key);
         }
 
