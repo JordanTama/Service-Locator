@@ -1,11 +1,10 @@
 {
   "name": "com.jordantama.service-locator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "displayName": "Service Locator",
   "description": "This is an implementation of the service locator pattern.",
   "unity": "2020.3",
   "unityRelease": "0f1",
-  "dependencies": {},
   "keywords": [
     "service",
     "locator",
