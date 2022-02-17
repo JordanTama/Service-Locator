@@ -28,7 +28,7 @@ namespace JordanTama.ServiceLocator
                 if (constructor == null || !type.GetInterfaces().Contains(typeof(IService)))
                     continue;
                 
-                IService service = (IService) Activator.CreateInstance(type);
+                dynamic service = Activator.CreateInstance(type);
                 Register(service);
             }
         }
